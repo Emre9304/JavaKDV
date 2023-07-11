@@ -1,0 +1,17 @@
+
+package giris;
+import java.util.Scanner;
+public class class2 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int a;
+        System.out.println("Tutarı giriniz: ");
+        a = input.nextInt();
+        System.out.println("Kdv tutarını giriniz: ");
+        int kdv = input.nextInt();
+        int kdvliFiyat = ((a * kdv) / 100)+a;
+        System.out.println("Kdv'li fiyat: " +kdvliFiyat);
+        int kdvTutar = kdvliFiyat - a;
+        System.out.println("Kdv Tutarı: "+ kdvTutar);
+    }
+}
